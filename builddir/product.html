@@ -1,0 +1,806 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Товары &mdash; Informers 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Informers 1.0 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Informers
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Товары</a><ul>
+<li><a class="reference internal" href="#id2">Список товаров</a></li>
+<li><a class="reference internal" href="#id3">Товары категории</a></li>
+<li><a class="reference internal" href="#id4">Данные товара</a></li>
+<li><a class="reference internal" href="#id5">Количество товаров</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Informers</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Товары</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/product.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Товары<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Список товаров<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-auto docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Адрес</th>
+<th class="head">Тип запроса</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>/api/<strong>(template|script)</strong>/product/all</td>
+<td>GET</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils" id="id6">
+<caption><span class="caption-text">Параметры запроса</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Обозначение</th>
+<th class="head">Тип</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>offset</td>
+<td>integer</td>
+<td>смещение, с какого товара выводим</td>
+</tr>
+<tr class="row-odd"><td>limit</td>
+<td>integer</td>
+<td>лимит, какое кол-во товаров выводим</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils" id="id7">
+<caption><span class="caption-text">Возвращаемые параметры</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Обозначение</th>
+<th class="head">Тип</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>product_id</td>
+<td>integer</td>
+<td>id товара</td>
+</tr>
+<tr class="row-odd"><td>name</td>
+<td>string</td>
+<td>название товара</td>
+</tr>
+<tr class="row-even"><td>full</td>
+<td>string</td>
+<td>описание товара</td>
+</tr>
+<tr class="row-odd"><td>price</td>
+<td>integer</td>
+<td>цена</td>
+</tr>
+<tr class="row-even"><td>price_old</td>
+<td>integer</td>
+<td>старая цена</td>
+</tr>
+<tr class="row-odd"><td>price_update</td>
+<td>integer</td>
+<td>стоимость обновления</td>
+</tr>
+<tr class="row-even"><td>type_product</td>
+<td>integer</td>
+<td><dl class="first last docutils">
+<dt>тип продукта:</dt>
+<dd><ul class="first last simple">
+<li>0 - бесплатный</li>
+<li>1 - платный</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td>preview</td>
+<td>string</td>
+<td>превью-изображение</td>
+</tr>
+<tr class="row-even"><td>images</td>
+<td>array</td>
+<td>список изображений товара</td>
+</tr>
+<tr class="row-odd"><td>files</td>
+<td>string</td>
+<td>путь на файл-архив с товаром</td>
+</tr>
+<tr class="row-even"><td>version</td>
+<td>string</td>
+<td>версия товара</td>
+</tr>
+<tr class="row-odd"><td>language</td>
+<td>integer</td>
+<td><dl class="first last docutils">
+<dt>язык скрипта: <strong>(только в маркете скриптов)</strong></dt>
+<dd><ul class="first last simple">
+<li>0 - все</li>
+<li>1 - JavaScript</li>
+<li>2 - PHP</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td>uapi</td>
+<td>integer</td>
+<td>используется uAPI: <strong>(только в маркете скриптов)</strong></td>
+</tr>
+<tr class="row-odd"><td>is_bonus</td>
+<td>integer</td>
+<td>бонусный товар: <strong>(только в маркете шаблонов)</strong></td>
+</tr>
+<tr class="row-even"><td>video</td>
+<td>string</td>
+<td>ID видео-демонстрации <strong>(только youtube)</strong></td>
+</tr>
+<tr class="row-odd"><td>website</td>
+<td>string</td>
+<td>адрес демо-сайта</td>
+</tr>
+<tr class="row-even"><td>new_updates</td>
+<td>string</td>
+<td>текст с описанием новых обновлений</td>
+</tr>
+<tr class="row-odd"><td>price_install</td>
+<td>integer</td>
+<td>стоимость установки, наценка на установку</td>
+</tr>
+<tr class="row-even"><td>license_standart</td>
+<td>integer</td>
+<td>стоимость стандартной лицензии</td>
+</tr>
+<tr class="row-odd"><td>license_basic</td>
+<td>integer</td>
+<td>стоимость базовой лицензии</td>
+</tr>
+<tr class="row-even"><td>license_expanded</td>
+<td>integer</td>
+<td>стоимость расширенной лицензии</td>
+</tr>
+<tr class="row-odd"><td>status</td>
+<td>integer</td>
+<td><dl class="first last docutils">
+<dt>статус:</dt>
+<dd><ul class="first last simple">
+<li>0 - неактивен</li>
+<li>1 - активен</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Параметры <strong>language</strong> и <strong>uapi</strong> используются только в маркете скриптов</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Параметр <strong>is_bonus</strong> используется только в маркете шаблонов</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Товары категории<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-auto docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Адрес</th>
+<th class="head">Тип запроса</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>/api/<strong>(template|script)</strong>/product/category</td>
+<td>GET</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils" id="id8">
+<caption><span class="caption-text">Параметры запроса</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Обозначение</th>
+<th class="head">Тип</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>category_id</td>
+<td>integer</td>
+<td>идентификатор категории, товары которой необходимо получить</td>
+</tr>
+<tr class="row-odd"><td>offset</td>
+<td>integer</td>
+<td>смещение, с какого товара выводим</td>
+</tr>
+<tr class="row-even"><td>limit</td>
+<td>integer</td>
+<td>лимит, какое кол-во товаров выводим</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils" id="id9">
+<caption><span class="caption-text">Возвращаемые параметры</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Обозначение</th>
+<th class="head">Тип</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>product_id</td>
+<td>integer</td>
+<td>id товара</td>
+</tr>
+<tr class="row-odd"><td>name</td>
+<td>string</td>
+<td>название товара</td>
+</tr>
+<tr class="row-even"><td>full</td>
+<td>string</td>
+<td>описание товара</td>
+</tr>
+<tr class="row-odd"><td>price</td>
+<td>integer</td>
+<td>цена</td>
+</tr>
+<tr class="row-even"><td>price_old</td>
+<td>integer</td>
+<td>старая цена</td>
+</tr>
+<tr class="row-odd"><td>price_update</td>
+<td>integer</td>
+<td>стоимость обновления</td>
+</tr>
+<tr class="row-even"><td>type_product</td>
+<td>integer</td>
+<td><dl class="first last docutils">
+<dt>тип продукта:</dt>
+<dd><ul class="first last simple">
+<li>0 - бесплатный</li>
+<li>1 - платный</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td>preview</td>
+<td>string</td>
+<td>превью-изображение</td>
+</tr>
+<tr class="row-even"><td>images</td>
+<td>array</td>
+<td>список изображений товара</td>
+</tr>
+<tr class="row-odd"><td>files</td>
+<td>string</td>
+<td>путь на файл-архив со шаблоном/скриптом</td>
+</tr>
+<tr class="row-even"><td>version</td>
+<td>string</td>
+<td>версия товара</td>
+</tr>
+<tr class="row-odd"><td>language</td>
+<td>integer</td>
+<td><dl class="first last docutils">
+<dt>язык скрипта: <strong>(только в маркете скриптов)</strong></dt>
+<dd><ul class="first last simple">
+<li>0 - все</li>
+<li>1 - JavaScript</li>
+<li>2 - PHP</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td>uapi</td>
+<td>integer</td>
+<td>используется uAPI: <strong>(только в маркете скриптов)</strong></td>
+</tr>
+<tr class="row-odd"><td>is_bonus</td>
+<td>integer</td>
+<td>бонусный товар: <strong>(только в маркете шаблонов)</strong></td>
+</tr>
+<tr class="row-even"><td>video</td>
+<td>string</td>
+<td>ID видео-демонстрации <strong>(только youtube)</strong></td>
+</tr>
+<tr class="row-odd"><td>website</td>
+<td>string</td>
+<td>адрес демо-сайта</td>
+</tr>
+<tr class="row-even"><td>new_updates</td>
+<td>string</td>
+<td>текст с описанием новых обновлений</td>
+</tr>
+<tr class="row-odd"><td>price_install</td>
+<td>integer</td>
+<td>стоимость установки, наценка на установку</td>
+</tr>
+<tr class="row-even"><td>license_standart</td>
+<td>integer</td>
+<td>стоимость стандартной лицензии</td>
+</tr>
+<tr class="row-odd"><td>license_basic</td>
+<td>integer</td>
+<td>стоимость базовой лицензии</td>
+</tr>
+<tr class="row-even"><td>license_expanded</td>
+<td>integer</td>
+<td>стоимость расширенной лицензии</td>
+</tr>
+<tr class="row-odd"><td>status</td>
+<td>integer</td>
+<td><dl class="first last docutils">
+<dt>статус:</dt>
+<dd><ul class="first last simple">
+<li>0 - неактивен</li>
+<li>1 - активен</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils" id="id10">
+<caption><span class="caption-text">В случае неуспеха</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">status</th>
+<th class="head">error</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>message</td>
+<td>сообщение об ошибке</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Параметры <strong>language</strong> и <strong>uapi</strong> используются только в маркете скриптов</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Параметр <strong>is_bonus</strong> используется только в маркете шаблонов</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>Данные товара<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-auto docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Адрес</th>
+<th class="head">Тип запроса</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>/api/<strong>(template|script)</strong>/product</td>
+<td>GET</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils" id="id11">
+<caption><span class="caption-text">Параметры запроса</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Обозначение</th>
+<th class="head">Тип</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>product_id</td>
+<td>integer</td>
+<td>идентификатор товара, данные которого необходимо получить</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils" id="id12">
+<caption><span class="caption-text">Возвращаемые параметры</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Обозначение</th>
+<th class="head">Тип</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>product_id</td>
+<td>integer</td>
+<td>id товара</td>
+</tr>
+<tr class="row-odd"><td>name</td>
+<td>string</td>
+<td>название товара</td>
+</tr>
+<tr class="row-even"><td>full</td>
+<td>string</td>
+<td>описание товара</td>
+</tr>
+<tr class="row-odd"><td>price</td>
+<td>integer</td>
+<td>цена</td>
+</tr>
+<tr class="row-even"><td>price_old</td>
+<td>integer</td>
+<td>старая цена</td>
+</tr>
+<tr class="row-odd"><td>price_update</td>
+<td>integer</td>
+<td>стоимость обновления</td>
+</tr>
+<tr class="row-even"><td>type_product</td>
+<td>integer</td>
+<td><dl class="first last docutils">
+<dt>тип продукта:</dt>
+<dd><ul class="first last simple">
+<li>0 - бесплатный</li>
+<li>1 - платный</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td>preview</td>
+<td>string</td>
+<td>превью-изображение</td>
+</tr>
+<tr class="row-even"><td>images</td>
+<td>array</td>
+<td>список изображений товара</td>
+</tr>
+<tr class="row-odd"><td>files</td>
+<td>string</td>
+<td>путь на файл-архив со шаблоном/скриптом</td>
+</tr>
+<tr class="row-even"><td>version</td>
+<td>string</td>
+<td>версия товара</td>
+</tr>
+<tr class="row-odd"><td>language</td>
+<td>integer</td>
+<td><dl class="first last docutils">
+<dt>язык скрипта: <strong>(только в маркете скриптов)</strong></dt>
+<dd><ul class="first last simple">
+<li>0 - все</li>
+<li>1 - JavaScript</li>
+<li>2 - PHP</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td>uapi</td>
+<td>integer</td>
+<td>используется uAPI: <strong>(только в маркете скриптов)</strong></td>
+</tr>
+<tr class="row-odd"><td>is_bonus</td>
+<td>integer</td>
+<td>бонусный товар: <strong>(только в маркете шаблонов)</strong></td>
+</tr>
+<tr class="row-even"><td>video</td>
+<td>string</td>
+<td>ID видео-демонстрации <strong>(только youtube)</strong></td>
+</tr>
+<tr class="row-odd"><td>website</td>
+<td>string</td>
+<td>адрес демо-сайта</td>
+</tr>
+<tr class="row-even"><td>new_updates</td>
+<td>string</td>
+<td>текст с описанием новых обновлений</td>
+</tr>
+<tr class="row-odd"><td>price_install</td>
+<td>integer</td>
+<td>стоимость установки, наценка на установку</td>
+</tr>
+<tr class="row-even"><td>license_standart</td>
+<td>integer</td>
+<td>стоимость стандартной лицензии</td>
+</tr>
+<tr class="row-odd"><td>license_basic</td>
+<td>integer</td>
+<td>стоимость базовой лицензии</td>
+</tr>
+<tr class="row-even"><td>license_expanded</td>
+<td>integer</td>
+<td>стоимость расширенной лицензии</td>
+</tr>
+<tr class="row-odd"><td>status</td>
+<td>integer</td>
+<td><dl class="first last docutils">
+<dt>статус:</dt>
+<dd><ul class="first last simple">
+<li>0 - неактивен</li>
+<li>1 - активен</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils" id="id13">
+<caption><span class="caption-text">В случае неуспеха</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">status</th>
+<th class="head">error</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>message</td>
+<td>сообщение об ошибке</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Параметры <strong>language</strong> и <strong>uapi</strong> используются только в маркете скриптов</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Параметр <strong>is_bonus</strong> используется только в маркете шаблонов</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>Количество товаров<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-auto docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Адрес</th>
+<th class="head">Тип запроса</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>/api/<strong>(template|script)</strong>/product/count</td>
+<td>GET</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils" id="id14">
+<caption><span class="caption-text">Параметры запроса</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Параметры</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>нет параметров</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils" id="id15">
+<caption><span class="caption-text">В случае успеха</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">count</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Общее количество товаров</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-auto docutils" id="id16">
+<caption><span class="caption-text">В случае неуспеха</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">status</th>
+<th class="head">error</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>message</td>
+<td>сообщение об ошибке</td>
+</tr>
+</tbody>
+</table>
+<p>Show history change code by author</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Dimonchik.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

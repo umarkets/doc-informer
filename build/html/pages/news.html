@@ -1,0 +1,681 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Для Пользователя &mdash; Informers 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Informers 1.0 documentation" href="../index.html"/>
+        <link rel="prev" title="Документация по информерам uCoz" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Informers
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Для Пользователя</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Новости сайта</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Материалы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Категории</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Календарь</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id6">Для разработчика</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id7">Новости сайта</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Материалы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Категории</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Календарь</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Informers</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Для Пользователя</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/pages/news.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Для Пользователя<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Новости сайта<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>Материалы<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Пример создания:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$NEW_INF$({
+  name:`Информер #1`,
+  module: `1`,
+  type_data: `0`,
+  sort: `4`,
+  count_material: `5`,
+  count_row: `19`,
+  list_id_cat: `77`,
+  list_id_item: `78`,
+  max_title_lenght: `79`,
+  item_current: `3`,
+  item_not_exists: `Материалов за текущий период нет.`,
+  template: ``
+})
+</pre></div>
+</div>
+<p>Параметры информера:</p>
+<table border="1" class="colwidths-auto docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Обозначение</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>name</td>
+<td>Название информера</td>
+</tr>
+<tr class="row-odd"><td>module</td>
+<td><ul class="first last simple">
+<li>1 - <strong>Новости сайта</strong></li>
+<li>2 - Блог</li>
+<li>3 - Каталог статей</li>
+<li>4 - Каталог файлов</li>
+<li>5 - Каталог сайтов</li>
+<li>6 - Доска объявлений</li>
+<li>7 - Фотоальбомы</li>
+<li>8 - Форум</li>
+<li>9 - Пользователи</li>
+<li>10 - Комментарии</li>
+<li>11 - Случайные данные</li>
+<li>12 - Счетчики для пользователей</li>
+<li>13 - Пользователи, посетившие сайт за текущий день</li>
+<li>14 - Счетчики материалов</li>
+<li>15 - Теги</li>
+<li>16 - ТОП наград</li>
+<li>21 - Онлайн игры</li>
+<li>22 - Интернет-магазин</li>
+<li>23 - Видео</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>sort</td>
+<td><dl class="first last docutils">
+<dt>Способ сортировки:</dt>
+<dd><ul class="first last simple">
+<li>1 - Дата добавления материала A</li>
+<li>2 - Дата добавления материала D</li>
+<li>3 - Рейтинг материала A</li>
+<li>4 - Рейтинг материала D</li>
+<li>5 - Количество просмотров A</li>
+<li>6 - Количество просмотров D</li>
+<li>7 - Комментарии к материалу A</li>
+<li>8 - Комментарии к материалу D</li>
+<li>9 - В случайном порядке</li>
+<li>10 - Название материала</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td>count_material</td>
+<td>‘Количество материалов’</td>
+</tr>
+<tr class="row-even"><td>count_row</td>
+<td><dl class="first last docutils">
+<dt>Количество колонок</dt>
+<dd><ul class="first last simple">
+<li>число от 1 до 20</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td>list_id_cat</td>
+<td>Список ID категорий</td>
+</tr>
+<tr class="row-even"><td>list_id_item</td>
+<td>Список ID материалов</td>
+</tr>
+<tr class="row-odd"><td>max_title_lenght</td>
+<td>Максимальная длина заголовка</td>
+</tr>
+<tr class="row-even"><td>type_data</td>
+<td><ul class="first last simple">
+<li>0 - <strong>Материалы</strong></li>
+<li>1 - Категории</li>
+<li>2 - Календарь</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>item_current</td>
+<td><dl class="first last docutils">
+<dt>Материалы за текущий период:</dt>
+<dd><ul class="first last simple">
+<li>0 - не выбранно</li>
+<li>1 - день</li>
+<li>2 - месяц</li>
+<li>3 - год</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td>item_not_exists</td>
+<td>Сообщение, если нет материалов за текущий период</td>
+</tr>
+<tr class="row-odd"><td>template</td>
+<td>Шаблон информера</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id4">
+<h3>Категории<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Пример создания:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$NEW_INF$({
+  name:`Информер #2`,
+  module: `1`,
+  type_data: `1`,
+  count_row: `19`,
+  return_js: `1`,
+  return_full: `1`,
+  template: ``
+})
+</pre></div>
+</div>
+<p>Параметры информера:</p>
+<table border="1" class="colwidths-auto docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Обозначение</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>name</td>
+<td>Название информера</td>
+</tr>
+<tr class="row-odd"><td>module</td>
+<td><ul class="first last simple">
+<li>1 - <strong>Новости сайта</strong></li>
+<li>2 - Блог</li>
+<li>3 - Каталог статей</li>
+<li>4 - Каталог файлов</li>
+<li>5 - Каталог сайтов</li>
+<li>6 - Доска объявлений</li>
+<li>7 - Фотоальбомы</li>
+<li>8 - Форум</li>
+<li>9 - Пользователи</li>
+<li>10 - Комментарии</li>
+<li>11 - Случайные данные</li>
+<li>12 - Счетчики для пользователей</li>
+<li>13 - Пользователи, посетившие сайт за текущий день</li>
+<li>14 - Счетчики материалов</li>
+<li>15 - Теги</li>
+<li>16 - ТОП наград</li>
+<li>21 - Онлайн игры</li>
+<li>22 - Интернет-магазин</li>
+<li>23 - Видео</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>type_data</td>
+<td><ul class="first last simple">
+<li>0 - Материалы</li>
+<li>1 - <strong>Категории</strong></li>
+<li>2 - Календарь</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>count_row</td>
+<td><dl class="first last docutils">
+<dt>Количество колонок</dt>
+<dd><ul class="first last simple">
+<li>число от 1 до 20</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td>return_js</td>
+<td><dl class="first last docutils">
+<dt>Возвращать результат в JavaScript формате</dt>
+<dd><ul class="first last simple">
+<li>0 - нет</li>
+<li>1 - да</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td>return_full</td>
+<td><dl class="first last docutils">
+<dt>Возвращать полный список категорий</dt>
+<dd><ul class="first last simple">
+<li>0 - нет</li>
+<li>1 - да</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td>template</td>
+<td>Шаблон информера</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h3>Календарь<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Пример создания:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$NEW_INF$({
+  name:`Информер #3`,
+  module: `1`,
+  type_data: `2`,
+  year_and_month: `2006-06`,
+})
+</pre></div>
+</div>
+<p>Параметры информера:</p>
+<table border="1" class="colwidths-auto docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Обозначение</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>name</td>
+<td>Название информера</td>
+</tr>
+<tr class="row-odd"><td>module</td>
+<td><ul class="first last simple">
+<li>1 - <strong>Новости сайта</strong></li>
+<li>2 - Блог</li>
+<li>3 - Каталог статей</li>
+<li>4 - Каталог файлов</li>
+<li>5 - Каталог сайтов</li>
+<li>6 - Доска объявлений</li>
+<li>7 - Фотоальбомы</li>
+<li>8 - Форум</li>
+<li>9 - Пользователи</li>
+<li>10 - Комментарии</li>
+<li>11 - Случайные данные</li>
+<li>12 - Счетчики для пользователей</li>
+<li>13 - Пользователи, посетившие сайт за текущий день</li>
+<li>14 - Счетчики материалов</li>
+<li>15 - Теги</li>
+<li>16 - ТОП наград</li>
+<li>21 - Онлайн игры</li>
+<li>22 - Интернет-магазин</li>
+<li>23 - Видео</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>type_data</td>
+<td><ul class="first last simple">
+<li>0 - Материалы</li>
+<li>1 - Категории</li>
+<li>2 - <strong>Календарь</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>year_and_month</td>
+<td><dl class="first last docutils">
+<dt>Год и месяц</dt>
+<dd><ul class="first last simple">
+<li>в формате: год-месяц</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h1>Для разработчика<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id7">
+<h2>Новости сайта<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h3>Материалы<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Параметры информера:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span>
+  <span class="s1">&#39;Название информера&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Модуль&#39;</span><span class="p">,</span>
+    <span class="o">*</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">Новости</span> <span class="n">сайта</span>
+    <span class="mi">2</span> <span class="o">-</span> <span class="n">Блог</span>
+    <span class="mi">3</span> <span class="o">-</span> <span class="n">Каталог</span> <span class="n">статей</span>
+    <span class="mi">4</span> <span class="o">-</span> <span class="n">Каталог</span> <span class="n">файлов</span>
+    <span class="mi">5</span> <span class="o">-</span> <span class="n">Каталог</span> <span class="n">сайтов</span>
+    <span class="mi">6</span> <span class="o">-</span> <span class="n">Доска</span> <span class="n">объявлений</span>
+    <span class="mi">7</span> <span class="o">-</span> <span class="n">Фотоальбомы</span>
+    <span class="mi">8</span> <span class="o">-</span> <span class="n">Форум</span>
+    <span class="mi">9</span> <span class="o">-</span> <span class="n">Пользователи</span>
+    <span class="mi">10</span> <span class="o">-</span> <span class="n">Комментарии</span>
+    <span class="mi">11</span> <span class="o">-</span> <span class="n">Случайные</span> <span class="n">данные</span>
+    <span class="mi">12</span> <span class="o">-</span> <span class="n">Счетчики</span> <span class="n">для</span> <span class="n">пользователей</span>
+    <span class="mi">13</span> <span class="o">-</span> <span class="n">Пользователи</span><span class="p">,</span> <span class="n">посетившие</span> <span class="n">сайт</span> <span class="n">за</span> <span class="n">текущий</span> <span class="n">день</span>
+    <span class="mi">14</span> <span class="o">-</span> <span class="n">Счетчики</span> <span class="n">материалов</span>
+    <span class="mi">15</span> <span class="o">-</span> <span class="n">Теги</span>
+    <span class="mi">16</span> <span class="o">-</span> <span class="n">ТОП</span> <span class="n">наград</span>
+    <span class="mi">21</span> <span class="o">-</span> <span class="n">Онлайн</span> <span class="n">игры</span>
+    <span class="mi">22</span> <span class="o">-</span> <span class="n">Интернет</span><span class="o">-</span><span class="n">магазин</span>
+    <span class="mi">23</span> <span class="o">-</span> <span class="n">Видео</span>
+  <span class="s1">&#39;Способ сортировки&#39;</span><span class="p">,</span>
+    <span class="mi">1</span> <span class="o">-</span> <span class="n">Дата</span> <span class="n">добавления</span> <span class="n">материала</span> <span class="n">A</span>
+    <span class="mi">2</span> <span class="o">-</span> <span class="n">Дата</span> <span class="n">добавления</span> <span class="n">материала</span> <span class="n">D</span>
+    <span class="mi">3</span> <span class="o">-</span> <span class="n">Рейтинг</span> <span class="n">материала</span> <span class="n">A</span>
+    <span class="mi">4</span> <span class="o">-</span> <span class="n">Рейтинг</span> <span class="n">материала</span> <span class="n">D</span>
+    <span class="mi">5</span> <span class="o">-</span> <span class="n">Количество</span> <span class="n">просмотров</span> <span class="n">A</span>
+    <span class="mi">6</span> <span class="o">-</span> <span class="n">Количество</span> <span class="n">просмотров</span> <span class="n">D</span>
+    <span class="mi">7</span> <span class="o">-</span> <span class="n">Комментарии</span> <span class="n">к</span> <span class="n">материалу</span> <span class="n">A</span>
+    <span class="mi">8</span> <span class="o">-</span> <span class="n">Комментарии</span> <span class="n">к</span> <span class="n">материалу</span> <span class="n">D</span>
+    <span class="mi">9</span> <span class="o">-</span> <span class="n">В</span> <span class="n">случайном</span> <span class="n">порядке</span>
+    <span class="mi">10</span><span class="o">-</span> <span class="n">Название</span> <span class="n">материала</span>
+  <span class="s1">&#39;Количество материалов&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Количество колонок&#39;</span><span class="p">,</span>
+    <span class="mi">1</span><span class="o">-</span><span class="mi">20</span>
+  <span class="s1">&#39;Список ID категорий&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Список ID материалов&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Максимальная длина заголовка&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Тип данных&#39;</span><span class="p">,</span>
+    <span class="o">*</span> <span class="mi">0</span> <span class="o">-</span> <span class="n">Материалы</span>
+    <span class="mi">1</span> <span class="o">-</span> <span class="n">Категории</span>
+    <span class="mi">2</span> <span class="o">-</span> <span class="n">Календарь</span>
+  <span class="s1">&#39;Материалы за текущий период&#39;</span><span class="p">,</span>
+    <span class="mi">0</span> <span class="o">-</span> <span class="n">не</span> <span class="n">выбранно</span>
+    <span class="mi">1</span> <span class="o">-</span> <span class="n">день</span>
+    <span class="mi">2</span> <span class="o">-</span> <span class="n">месяц</span>
+    <span class="mi">3</span> <span class="o">-</span> <span class="n">год</span>
+  <span class="s1">&#39;Сообщение, если нет материалов за текущий период&#39;</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Пример:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Информер #1&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;4&#39;</span><span class="p">,</span><span class="s1">&#39;5&#39;</span><span class="p">,</span><span class="s1">&#39;19&#39;</span><span class="p">,</span><span class="s1">&#39;77&#39;</span><span class="p">,</span><span class="s1">&#39;78&#39;</span><span class="p">,</span><span class="s1">&#39;79&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">,</span><span class="s1">&#39;Материалов за текущий период нет.&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>Категории<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Параметры информера:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span>
+  <span class="s1">&#39;Название информера&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Модуль&#39;</span><span class="p">,</span>
+    <span class="o">*</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">Новости</span> <span class="n">сайта</span>
+    <span class="mi">2</span> <span class="o">-</span> <span class="n">Блог</span>
+    <span class="mi">3</span> <span class="o">-</span> <span class="n">Каталог</span> <span class="n">статей</span>
+    <span class="mi">4</span> <span class="o">-</span> <span class="n">Каталог</span> <span class="n">файлов</span>
+    <span class="mi">5</span> <span class="o">-</span> <span class="n">Каталог</span> <span class="n">сайтов</span>
+    <span class="mi">6</span> <span class="o">-</span> <span class="n">Доска</span> <span class="n">объявлений</span>
+    <span class="mi">7</span> <span class="o">-</span> <span class="n">Фотоальбомы</span>
+    <span class="mi">8</span> <span class="o">-</span> <span class="n">Форум</span>
+    <span class="mi">9</span> <span class="o">-</span> <span class="n">Пользователи</span>
+    <span class="mi">10</span> <span class="o">-</span> <span class="n">Комментарии</span>
+    <span class="mi">11</span> <span class="o">-</span> <span class="n">Случайные</span> <span class="n">данные</span>
+    <span class="mi">12</span> <span class="o">-</span> <span class="n">Счетчики</span> <span class="n">для</span> <span class="n">пользователей</span>
+    <span class="mi">13</span> <span class="o">-</span> <span class="n">Пользователи</span><span class="p">,</span> <span class="n">посетившие</span> <span class="n">сайт</span> <span class="n">за</span> <span class="n">текущий</span> <span class="n">день</span>
+    <span class="mi">14</span> <span class="o">-</span> <span class="n">Счетчики</span> <span class="n">материалов</span>
+    <span class="mi">15</span> <span class="o">-</span> <span class="n">Теги</span>
+    <span class="mi">16</span> <span class="o">-</span> <span class="n">ТОП</span> <span class="n">наград</span>
+    <span class="mi">21</span> <span class="o">-</span> <span class="n">Онлайн</span> <span class="n">игры</span>
+    <span class="mi">22</span> <span class="o">-</span> <span class="n">Интернет</span><span class="o">-</span><span class="n">магазин</span>
+    <span class="mi">23</span> <span class="o">-</span> <span class="n">Видео</span>
+  <span class="s1">&#39;Способ сортировки&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+  <span class="s1">&#39;10&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+  <span class="s1">&#39;Количество колонок&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;0&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+  <span class="s1">&#39;Возвращать результат в JavaScript формате&#39;</span><span class="p">,</span>
+    <span class="mi">0</span> <span class="o">-</span> <span class="n">нет</span>
+    <span class="mi">1</span> <span class="o">-</span> <span class="n">да</span>
+  <span class="s1">&#39;Возвращать полный список категорий&#39;</span><span class="p">,</span>
+    <span class="mi">0</span> <span class="o">-</span> <span class="n">нет</span>
+    <span class="mi">1</span> <span class="o">-</span> <span class="n">да</span>
+  <span class="s1">&#39;Тип данных&#39;</span><span class="p">,</span>
+    <span class="mi">0</span> <span class="o">-</span> <span class="n">Материалы</span>
+    <span class="o">*</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">Категории</span>
+    <span class="mi">2</span> <span class="o">-</span> <span class="n">Календарь</span>
+  <span class="s1">&#39;Материалы за текущий период&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+  <span class="s1">&#39;Сообщение, если нет материалов за текущий период&#39;</span> <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Пример:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Информер #2&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;10&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>Календарь<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Параметры информера:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span>
+  <span class="s1">&#39;Название информера&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Модуль&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;0&#39;</span><span class="p">,</span>  <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+  <span class="s1">&#39;10&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+  <span class="s1">&#39;0&#39;</span><span class="p">,</span>  <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+  <span class="s1">&#39;Год и месяц календаря:&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;&#39;</span><span class="p">,</span>   <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+  <span class="s1">&#39;&#39;</span><span class="p">,</span>   <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+  <span class="s1">&#39;Тип данных&#39;</span><span class="p">,</span>
+    <span class="mi">0</span> <span class="o">-</span> <span class="n">Материалы</span>
+    <span class="mi">1</span> <span class="o">-</span> <span class="n">Категории</span>
+    <span class="o">*</span> <span class="mi">2</span> <span class="o">-</span> <span class="n">Календарь</span>
+  <span class="s1">&#39;&#39;</span><span class="p">,</span>   <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+  <span class="s1">&#39;&#39;</span>    <span class="o">//</span> <span class="n">не</span> <span class="n">используется</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Пример:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Информер #3&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;10&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;2006-06&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Документация по информерам uCoz" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Dimonchik.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
