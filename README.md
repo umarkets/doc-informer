@@ -46,3 +46,21 @@
  - [Комментарии](doc/Comments.md)
  - [Теги](doc/Tags.md)
  - [Счётчики](doc/Counters.md)
+
+## Инсрукция по созданию архива для загрузки в umarket
+1. Устанавливаем шаблон №000 [https://prnt.sc/ikwdfr](https://prnt.sc/ikwdfr){:target="_blank"}
+2. Создаем новый каркас сайта [https://prnt.sc/ikwizv](https://prnt.sc/ikwizv){:target="_blank"}
+3. Добавляем каркас сайта в набор дизайнов [https://prnt.sc/ikwhk1](https://prnt.sc/ikwhk1){:target="_blank"}
+4. В разделе маркета "Резервные копии шаблонов" создаем новый бэкап [https://prnt.sc/ikxfij](https://prnt.sc/ikxfij){:target="_blank"} Скачиваем его себе на компьютер.
+5. Все файлы, которые должны быть распакованы на сервере, архивируем в архив "resource.zip" [https://prnt.sc/ikwn2j](https://prnt.sc/ikwn2j){:target="_blank"} и добавляем в архив шаблона. В результате у нас должна получиться такая структура архива [https://prnt.sc/ikxe8q](https://prnt.sc/ikxe8q){:target="_blank"}
+6. Указываем product_id в файле config.json [http://i.prntscr.com/kJ68ewusTsm1kDGdaAZILg.png](http://i.prntscr.com/kJ68ewusTsm1kDGdaAZILg.png){:target="_blank"}
+7. Проверяем правильность заполнение ключей в файле config.json
+
+## Структура файла config.json
+```
+{
+  "product_id": ""
+  "template_framework": "",
+  "informers": []
+}
+```
