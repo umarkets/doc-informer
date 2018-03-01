@@ -47,7 +47,7 @@
  - [Теги](doc/Tags.md)
  - [Счётчики](doc/Counters.md)
 
-# Инструкция по созданию архива для загрузки в umarket
+# Инструкция по созданию архива шаблона для загрузки в umarket
 1. Устанавливаем шаблон №000 <a href="https://prnt.sc/ikwdfr" target="_blank">https://prnt.sc/ikwdfr</a>  
 2. Создаем новый каркас сайта <a href="https://prnt.sc/ikwizv" target="_blank">https://prnt.sc/ikwizv</a>
 3. Добавляем каркас сайта в набор дизайнов <a href="https://prnt.sc/ikwhk1" target="_blank">https://prnt.sc/ikwhk1</a>
