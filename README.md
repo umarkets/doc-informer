@@ -51,7 +51,7 @@
 1. Активируем все модуля в админ панели сайта
 2. Создаем новый каркас сайта <a href="https://prnt.sc/ikwizv" target="_blank">https://prnt.sc/ikwizv</a>
 3. В разделе маркета "Резервные копии шаблонов" создаем новый бэкап <a href="https://prnt.sc/ikxfij" target="_blank">https://prnt.sc/ikxfij</a> Скачиваем его себе на компьютер.
-4. Все файлы, которые должны быть распакованы на сервере, архивируем в архив "resource.zip" <a href="https://prnt.sc/ikwn2j" target="_blank">https://prnt.sc/ikwn2j</a> и добавляем в архив шаблона. В результате у нас должна получиться такая структура архива <a href="https://prnt.sc/ikxe8q" target="_blank">https://prnt.sc/ikxe8q</a>
+4. Все файлы, которые должны быть распакованы на сервере, архивируем в архив "resource.zip" <a href="https://prnt.sc/ikwn2j" target="_blank">https://prnt.sc/ikwn2j</a> и добавляем в архив шаблона. В результате у нас должна получиться такая структура архива <a href="https://prnt.sc/io0m4z" target="_blank">https://prnt.sc/io0m4z</a>
 5. Загружаем файл в панели управления umarket.ucoz.net
 
 ## Структура файла config.json
