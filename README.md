@@ -15,7 +15,7 @@
 ## Пример
 ```
 <!--<new_informer>-->{
-  "title":"Новый инфораер",
+  "title":"Новый информер 1",
   "module":"bl",
   "sort":"",
   "max_entries":"",
